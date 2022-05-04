@@ -6,7 +6,7 @@
 
 该引擎的核心结构如下，共分为三层：
 
-<img src="docs/structure.png" style="zoom:30%;" />
+<img src="docs/structure.png" width=400px />
 
 | 转换层 | 作用 | 算法 |
 | --- | --- | --- |
@@ -41,19 +41,19 @@
 
     1. **单个字符**
        
-        <img src="%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C%206792eb8d602048d6adfb9fabd6781546/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6_(4).png" alt="未命名文件 (4).png" style="zoom:50%;" />
+        <img src="docs/Thompson1.png" height=100px />
         
     2. **或**
        
-        <img src="%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C%206792eb8d602048d6adfb9fabd6781546/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6_(5).png" alt="未命名文件 (5).png" style="zoom:50%;" />
+        <img src="docs/Thompson2.png" height=200px />
         
     3. **闭包**
        
-        <img src="%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C%206792eb8d602048d6adfb9fabd6781546/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6_(6).png" alt="未命名文件 (6).png" style="zoom:50%;" />
+        <img src="docs/Thompson3.png" height=300px />
         
     4. **连接**
        
-        <img src="%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C%206792eb8d602048d6adfb9fabd6781546/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6_(7).png" alt="未命名文件 (7).png" style="zoom:50%;" />
+        <img src="docs/Thompson4.png" height=300px />
 
 
 ### 3. DFA转换层
