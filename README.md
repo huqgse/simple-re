@@ -1,14 +1,12 @@
 
-
 # 一个简易的正则引擎
 
 ## 引擎结构
 
 该引擎的核心结构如下，共分为三层：
 
-<div align=center>
 <img src="docs/structure.png" width=300px />
-</div>
+
 
 | 转换层 | 作用 | 算法 |
 | --- | --- | --- |
