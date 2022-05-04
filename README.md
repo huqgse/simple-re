@@ -6,7 +6,9 @@
 
 该引擎的核心结构如下，共分为三层：
 
-<img src="docs/structure.png" width=400px align="middle" />
+<div align=center>
+<img src="docs/structure.png" width=400px />
+</div>
 
 | 转换层 | 作用 | 算法 |
 | --- | --- | --- |
@@ -20,16 +22,16 @@
 
 1. **填充连接符&**
    
-    正则式对于**运算连接符&**是隐式的，因此需要将正则式填充上**连接符&**，例如`(a|b)*abb`填充后转换为`(a|b)*a&b&b`。
+    正则式对于**运算连接符&**是隐式的，因此需要将正则式填充上**连接符&**，例如`(a|b)*abb`填充后转换为`(a|b)*&a&b&b`。
     
 2. **中缀 → 后缀**
    
-    该步骤是常见算法，是借助栈来实现的，从而实现`(a|b)*a&b&b` → `ab|*a&b&b&`。
+    该步骤是常见算法，是借助栈来实现的，从而实现`(a|b)*&a&b&b` → `ab|*a&b&b&`。
     
 
 ### 2. NFA转换层
 
-该层接收一个后缀的正则式，通过**[Thompson 构造法](https://blog.csdn.net/weixin_44691608/article/details/110195743)**，来完成**后缀表达式 → NFA**的转换。
+该层接收一个后缀的正则式，通过[Thompson 构造法](https://blog.csdn.net/weixin_44691608/article/details/110195743)，来完成**后缀表达式 → NFA**的转换。
 
 1. **数据结构**
    
@@ -62,8 +64,8 @@
 
 **子集构造法**
 
-1. $\epsilon -closure(s)$：返回所有s中的NFA状态可经任意长度的 ϵ 边抵达的状态集合
-2. $move(A,\  a)$：DFA 状态A中的每个NFA状态经过一次a边能抵达的所有NFA状态的集合。
+1. \epsilon -closure(s)：返回所有s中的NFA状态可经任意长度的 ϵ 边抵达的状态集合
+2. move(A,\  a)：DFA 状态A中的每个NFA状态经过一次a边能抵达的所有NFA状态的集合。
 
 ```cpp
 Subset-Construction(NFA)
