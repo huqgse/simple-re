@@ -70,7 +70,7 @@
 ```cpp
 Subset-Construction(NFA)
     let Dtran be a table
-		# DFA 状态集合的初始状态为 NFA 初始状态的闭包，并且未标记
+    # DFA 状态集合的初始状态为 NFA 初始状态的闭包，并且未标记
     DFA_States = {ε-closure(NFA.s0)}  
     while (exist T in DFA_States not marked) { # 存在未标记的 DFA 状态
         mark T  # 标记 T，表示查过 T 状态的所有后续状态了
