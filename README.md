@@ -64,7 +64,7 @@
 
 **子集构造法**
 
-1. \epsilon -closure(s)：返回所有s中的NFA状态可经任意长度的 ϵ 边抵达的状态集合
+1. epsilon -closure(s)：返回所有s中的NFA状态可经任意长度的 ϵ 边抵达的状态集合
 2. move(A,\  a)：DFA 状态A中的每个NFA状态经过一次a边能抵达的所有NFA状态的集合。
 
 ```cpp
