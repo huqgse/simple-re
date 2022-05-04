@@ -6,7 +6,7 @@
 
 该引擎的核心结构如下，共分为三层：
 
-<img src="docs/structure.png" width=400px />
+<img src="docs/structure.png" width=400px align="middle" />
 
 | 转换层 | 作用 | 算法 |
 | --- | --- | --- |
